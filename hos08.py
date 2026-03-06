@@ -31,9 +31,9 @@ class Book:
     def display_info(self):
         """Prints detailed information about the book."""
         info = ( f"Title: {self.title}\n" f"Author: {self.author}\n" f"ISBN: {self.isbn}\n" f"Status: {'Checked out' if self.is_checked_out else 'Available'}" )
-        print()
+        print(info)
+       
       
-
 class DownloadDetails:
     """Stores download-related information for an eBook."""
     def __init__(self, download_link, file_size):
